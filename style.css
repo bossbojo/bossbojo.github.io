@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:300');
+
+html,body{
+    font-family: 'Kanit', sans-serif !important;
+    background-color: #1f2126;
+    color: #ffffff;
+}
+.color-gold{
+    color: #ffaa00;
+}
+.color-gray{
+    color: #a3a3a3;
+}
+.color-white{
+    color: white;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+/* navbar */
+.bg-navbar{
+    background-color: #1b1c20;
+}
+
+/* table */
+table tbody tr:nth-of-type(odd) {
+    background-color: #26282d;
+}
+thead{
+    background-color: #1b1c20;
+    color: #ffffff;
+}
+th,td{
+    padding: 20px !important;
+    border:0px !important; 
+}
+thead th:first-child{
+    border-top-left-radius: 10px;
+}
+thead th:last-child{
+    border-top-right-radius: 10px;
+}
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+table tbody{
+    color: #afafaf;
+}
+/* card */
+.card{
+    background-color: #1b1c20;
+    border: none;
+    border-radius: 10px; 
+}
+
+/* button */
+.btn-info{
+    background-color: blue;
+}
+.btn-info:hover{
+    background-color: blueviolet;
+}
+.btn-info:active{
+    background-color: brown !important;
+}
