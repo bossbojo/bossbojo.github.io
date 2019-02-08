@@ -18,7 +18,13 @@ label {
     display: inline-block;
     margin-bottom: 0px;
 }
-
+.font-balance-size{
+    font-size: 30px;
+}
+.font-balance-name-size{
+    padding-top:7px;
+    font-size: 20px;
+}
 /* navbar */
 .bg-navbar{
     background-color: #1b1c20;
@@ -59,12 +65,42 @@ table tbody{
 }
 
 /* button */
-.btn-info{
-    background-color: blue;
+.btn-profile{
+    background-color: #1f2126;
+    color: #ffaa00;
+    border-radius: 20px;
 }
-.btn-info:hover{
-    background-color: blueviolet;
+.btn-profile:hover{
+    color: #ffffff;
+    background-color: #383c45;
 }
-.btn-info:active{
-    background-color: brown !important;
+.btn-profile:active{
+    background-color: #1b1c20;
+    border:1px solid #ffaa00;
+}
+.btn-balance{
+    background-color: #1b1c20;
+    color: #ffaa00;
+    border-radius: 20px;
+}
+.btn-balance:hover{
+    color: #ffffff;
+    background-color: #26282d;
+}
+.btn-balance:active{
+    background-color: #1b1c20;
+    border:1px solid #ffaa00;
+}
+.page-link,.page-item{
+    border: none;
+    color: white;
+    background-color: #1f2126;
+}
+.page-link:hover,.page-item:hover{
+    color: #1b1c20;
+    background-color: #ffaa00;
+}
+.page-link:active,.page-item:active{
+    color: #1b1c20;
+    background-color: #ffaa00;
 }

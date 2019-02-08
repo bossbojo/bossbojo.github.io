@@ -13,14 +13,25 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">Band</a>
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" width="181px">
+            </a>
             <span class="navbar-text">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="btn btn-balance" href="#">
+                            <img src="./images/icon/poker-token.png" width="20px">
+                            Balance
+                            <span class="color-white">
+                                123,456,789
+                            </span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="btn btn-profile" href="#">
+                            <img src="./images/icon/personal.png" width="20px">
+                            13sn5901
+                        </a>
                     </li>
                 </ul>
             </span>
@@ -28,7 +39,12 @@
     </nav>
     <nav class="navbar navbar-expand-lg bg-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">
+                <button class="btn btn-profile">
+                    <img src="./images/icon/personal.png" width="20px">
+                    13sn5901
+                </button>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,13 +52,28 @@
             <span class="navbar-text">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link">
+                            <img src="./images/icon/black-and-white-credit-cards.png">
+                            ยอดเงินคงเหลือ
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <img src="./images/icon/Group 7.png">
+                            เติมเงิน
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <img src="./images/icon/Group 3.png">
+                            ถอนเงิน
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <img src="./images/icon/Group 9.png">
+                            ประวัติการเติมถอน
+                        </a>
                     </li>
                 </ul>
             </span>
@@ -55,12 +86,12 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <label>ยอดเงินคงเหลือ</label>
+                                <label class="font-balance-name-size">ยอดเงินคงเหลือ</label>
                             </div>
-                            <div class="col-md-6 text-right">
-                                <label>
+                            <div class="col-md-6 text-right ด-">
+                                <label class="font-balance-size">
                                     <span class="color-gold">123,456,789</span>
-                                    THB    
+                                    THB
                                 </label>
                             </div>
                         </div>
@@ -88,27 +119,65 @@
                     <tbody>
                         <tr>
                             <td class="text-center">1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <td>May 10, 2018, 15:32:51 PM</td>
+                            <td>โอนผ่านธนาคาร</td>
+                            <td class="color-gold text-right">+3,000.00 THB</td>
+                            <td>กำลังดำเนินการ</td>
                         </tr>
                         <tr>
-                            <td class="text-center">1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <td class="text-center">2</td>
+                            <td>May 10, 2018, 15:32:51 PM</td>
+                            <td>โอนผ่านธนาคาร</td>
+                            <td class="text-right">-3,000.00 THB</td>
+                            <td>กำลังดำเนินการ</td>
                         </tr>
                         <tr>
-                            <td class="text-center">1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <td class="text-center">3</td>
+                            <td>May 10, 2018, 15:32:51 PM</td>
+                            <td>โอนผ่านธนาคาร</td>
+                            <td class="text-right">-500.00 TH</td>
+                            <td>กำลังดำเนินการ</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">4</td>
+                            <td>May 10, 2018, 15:32:51 PM</td>
+                            <td>โอนผ่านธนาคาร</td>
+                            <td class="color-gold text-right">+3,000.00 THB</td>
+                            <td>กำลังดำเนินการ</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">5</td>
+                            <td>May 10, 2018, 15:32:51 PM</td>
+                            <td>โอนผ่านธนาคาร</td>
+                            <td class="color-gold text-right">+3,000.00 THB</td>
+                            <td>กำลังดำเนินการ</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">6</td>
+                            <td>May 10, 2018, 15:32:51 PM</td>
+                            <td>โอนผ่านธนาคาร</td>
+                            <td class="color-gold text-right">+3,000.00 THB</td>
+                            <td>กำลังดำเนินการ</td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-right">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
