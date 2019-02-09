@@ -5,6 +5,25 @@ html,body{
     background-color: #1f2126;
     color: #ffffff;
 }
+
+/* navbar */
+.navbar-toggler {
+    color: #a3a3a3;
+    background-color: #23252c;
+    font-size: 20px;
+}
+.nav-item-2{
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.nav-item-2:hover{
+    background-color: #26282d;
+    border-bottom: 4px solid  #ffaa00;
+}
+.navbar-nav .active{
+    border-bottom: 4px solid  #ffaa00;
+}
 .color-gold{
     color: #ffaa00;
 }
@@ -25,7 +44,6 @@ label {
     padding-top:7px;
     font-size: 20px;
 }
-/* navbar */
 .bg-navbar{
     background-color: #1b1c20;
 }
