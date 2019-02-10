@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit:300');
+@import url('https://fonts.googleapis.com/css?family=Kanit:200');
 
 html,body{
     font-family: 'Kanit', sans-serif !important;
-    background-color: #1f2126;
+    background-color: #131519;
     color: #ffffff;
 }
 
 /* navbar */
+.bg-nav-top{
+    background-color: #1a1c21;
+}
 .navbar-toggler {
     color: #a3a3a3;
     background-color: #23252c;
@@ -19,13 +22,13 @@ html,body{
 }
 .nav-item-2:hover{
     background-color: #26282d;
-    border-bottom: 4px solid  #ffaa00;
+    border-bottom: 4px solid #F7D77A;
 }
 .navbar-nav .active{
-    border-bottom: 4px solid  #ffaa00;
+    border-bottom: 4px solid  #F7D77A;
 }
 .color-gold{
-    color: #ffaa00;
+    color: #F7D77A;
 }
 .color-gray{
     color: #a3a3a3;
@@ -45,32 +48,25 @@ label {
     font-size: 20px;
 }
 .bg-navbar{
-    background-color: #1b1c20;
+    background-color: #1F2126;
 }
 
 /* table */
 table tbody tr:nth-of-type(odd) {
     background-color: #26282d;
 }
+.bg-gold{
+    color:#000000;
+    background-image:  linear-gradient(#F7D77A,#D3933A);
+}
 thead{
-    background-color: #1b1c20;
-    color: #ffffff;
+    background-image:  linear-gradient(#F7D77A,#D3933A);
+    color: #000000;
+    
 }
 th,td{
     padding: 20px !important;
     border:0px !important; 
-}
-thead th:first-child{
-    border-top-left-radius: 10px;
-}
-thead th:last-child{
-    border-top-right-radius: 10px;
-}
-tbody tr:last-child td:last-child{
-    border-bottom-right-radius: 10px;
-}
-tbody tr:last-child td:first-child{
-    border-bottom-left-radius: 10px;
 }
 table tbody{
     color: #afafaf;
@@ -78,14 +74,61 @@ table tbody{
 /* card */
 .card{
     background-color: #1b1c20;
-    border: none;
+    border: 1px solid #F7D77A;
     border-radius: 10px; 
+}
+.card-play{
+    font-size: 11px;
+    background-color: #1a1c21;
+}
+.card-table{
+    border: 1px solid #1a1c21;
+}
+.card-table:hover{
+    border: 1px solid #D3933A;
+}
+.card-play .card-header{
+    border: none;
+}
+.bg-black{
+    background-color: #000000;
+}
+.bg-black-gray{
+    background-image:  linear-gradient(#0D0D0D 50%,#5D5D5D);
+}
+/* table */
+.title{
+    padding: 5px;
+    background-color: #1f1f1f;
+}
+.table-live{
+    background-color: #fff;
+    height: 85px;
+}
+.table-live-status{
+    height: 23.5px;
 }
 
 /* button */
+.bottom-right{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.btn-gold{
+    padding: 0px  15px  0px 15px;
+    border-radius: 0px;
+    background-image:  linear-gradient(#F7D77A,#D3933A);
+    color: #000000;
+    border: 0px;
+}
+.btn-gold:hover{
+    background-image:  linear-gradient(#D3933A,#F7D77A);
+    color: #ffffff;
+}
 .btn-profile{
-    background-color: #1f2126;
-    color: #ffaa00;
+    background-color: #1a1c21;
+    color: #F7D77A;
     border-radius: 20px;
 }
 .btn-profile:hover{
@@ -94,11 +137,11 @@ table tbody{
 }
 .btn-profile:active{
     background-color: #1b1c20;
-    border:1px solid #ffaa00;
+    border:1px solid #F7D77A;
 }
 .btn-balance{
-    background-color: #1b1c20;
-    color: #ffaa00;
+    background-color: #131519;
+    color: #F7D77A;
     border-radius: 20px;
 }
 .btn-balance:hover{
@@ -107,18 +150,41 @@ table tbody{
 }
 .btn-balance:active{
     background-color: #1b1c20;
-    border:1px solid #ffaa00;
+    border:1px solid #F7D77A;
 }
 .page-link,.page-item{
     border: none;
     color: white;
-    background-color: #1f2126;
+    background-color: #131519;
 }
 .page-link:hover,.page-item:hover{
     color: #1b1c20;
-    background-color: #ffaa00;
+    background-color: #F7D77A;
 }
 .page-link:active,.page-item:active{
     color: #1b1c20;
-    background-color: #ffaa00;
+    background-color: #F7D77A;
+}
+.page-item .active{
+    background-color: #F7D77A;
+    color: #000000;
+}
+
+/* echo marketing */
+.echo-marketing{
+    position: relative;
+    background-color: #101011;
+    padding:10px 10px 2px 50px;
+    color: #747474;
+    font-size: 14px;
+    border-radius: 40px;
+}
+.echo-marketing .echo-marketing-img{
+    position: absolute;
+    left: 20px;
+    top:13px;
+}
+.carousel-item img{
+    object-fit: cover;
+    height: 375px;
 }
