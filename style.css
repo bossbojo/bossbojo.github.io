@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit:200');
+@import url('https://fonts.googleapis.com/css?family=Kanit:300');
 
 html,body{
     font-family: 'Kanit', sans-serif !important;
@@ -7,6 +7,12 @@ html,body{
 }
 
 /* navbar */
+.band{
+    background: -webkit-linear-gradient(rgb(241, 213, 127),rgb(221, 151, 54));
+    font-weight: 900;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .bg-nav-top{
     background-color: #1a1c21;
 }
