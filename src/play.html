@@ -40,10 +40,114 @@
         </div>
     </nav>
     <div class="container">
-        Play
+        <div class="row mt-3">
+            <div class="col-md-9 p-0">
+                <div class="echo-marketing">
+                    <img class="echo-marketing-img" src="../images/icon/marketing.png" width="20px">
+                    <marquee direction="lefe" scrollamount="5"> แซนด์วิชสลัมแอดมิชชั่นสตีล จูนแฟรี่ฮาร์ดมุมมองแพนดา
+                        แกสโซฮอล์ออทิสติกกุมภาพันธ์ป๊อป สปิริตแชเชือนพาร์ตเนอร์ เวเฟอร์กรุ๊ปสุริยยาตร์สปิริตเทป พลานุภาพ
+                        ดีไซน์เนอร์ปฏิสัมพันธ์ โรลออนเช็งเม้งบัตเตอร์คัตเอาต์อุรังคธาตุ</marquee>
+                </div>
+            </div>
+            <div class="col-md-3 p-0" style="color:#b7b7b9;">
+                <div class="mt-2">
+                    <p class="text-right">
+                        28/05/2018 14:36 PM GMT+8
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12 p-0">
+                <video width="100%" controls autoplay>
+                    <source src="https://www.youtube.com/watch?v=Zgfi7wnGZlE" type="video/mp4">
+                </video>
+                <!-- top-left table -->
+                <div class="top-left">
+                    <div class="label-play">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 style="color:#b48e48;">Baccarat</h5>
+                                <a class="btn btn-balance" href="">
+                                    <img src="../images/icon/playtable.png">
+                                    <span class="color-white">Table 1</span>
+                                </a>
+                                <hr class="m-1">
+                                <label>Dealer : Nina</label>
+                            </div>
+                            <div class="col-6 pt-2">
+                                <div class="text-right">
+                                    <span style="float: right; color: #ffffff; font-size: 12px;">
+                                        Game: 154654 / 54
+                                    </span><br>
+                                    <button class="btn btn-table-play">50-4,000</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- top right table -->
+                <div class="top-right">
+                    <div class="label-play-right text-center">
+                        <a class="btn btn-balance" onclick="onOpenTablelist()">
+                            <img src="../images/icon/playtable.png">
+                            <span class="color-white">Table list</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- table list  -->
+                <div class="table-list" id="table-lists">
+                    <div class="title bg-gold">
+                        <div class="row p-1">
+                            <div class="col-6">
+                                <h4 class="mb-0">Baccarat</h4>
+                            </div>
+                            <div class="col-6 text-right">
+                                <a onclick="onCloseTablelist()">
+                                    <img src="../images/icon/close.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-list-body">
+                        <!-- <div class="row p-2">
+                            <div class="col-4">
+                                <a class="btn btn-balance">
+                                    <img src="../images/icon/playtable.png">
+                                    <span class="color-white">Table 1</span>
+                                </a>
+                            </div>
+                            <div class="col-4 p-2 color-gray">
+                                <span>Game: 154654 / 54</span>
+                            </div>
+                            <div class="col-4 p-2">
+                                <span>Limit : 50-4,000</span>
+                            </div>
+                        </div> -->
+                        <div class="row p2">
+                            <div class="col-12">
+                                <img src="../images/mock1.png" width="100%">
+                                <img src="../images/mock1.png" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/mock2.png" width="100%">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    function onOpenTablelist() {
+        $('#table-lists').removeClass('table-list-close');
+    }
+    function onCloseTablelist() {
+        $('#table-lists').addClass('table-list-close');
+    }
+</script>

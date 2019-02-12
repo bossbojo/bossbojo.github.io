@@ -5,7 +5,30 @@ html,body{
     background-color: #131519;
     color: #ffffff;
 }
+/* scoll bar*/
+/* width */
+.table-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
 
+/* Track */
+.table-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #1a1c21; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.table-list::-webkit-scrollbar-thumb {
+  
+  background: -webkit-linear-gradient(rgb(241, 213, 127),rgb(221, 151, 54));
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.table-list::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
 /* navbar */
 .band{
     background: -webkit-linear-gradient(rgb(241, 213, 127),rgb(221, 151, 54));
@@ -114,12 +137,25 @@ table tbody{
 .table-live-status{
     height: 23.5px;
 }
-
-/* button */
+/* position */
 .bottom-right{
     position: absolute;
     bottom: 0px;
     right: 0px;
+}
+.top-left{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.top-right{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/* button */
+a{
+    cursor: pointer;
 }
 .btn-gold{
     padding: 0px  15px  0px 15px;
@@ -158,6 +194,17 @@ table tbody{
     background-color: #1b1c20;
     border:1px solid #F7D77A;
 }
+.btn-table-play{
+    background-color: #2b2614;
+    color: #F7D77A;
+    border: 1px solid #4b4223;
+}
+.btn-table-play:hover{
+    background-color: #4a4122;
+    color: #ffffff;
+    border: 1px solid #ab9750;
+}
+/* pagination */
 .page-link,.page-item{
     border: none;
     color: white;
@@ -193,4 +240,51 @@ table tbody{
 .carousel-item img{
     object-fit: cover;
     height:375px;
+}
+
+/* play */
+.label-play{
+    width: 270px;
+    background-color: rgba(29, 29, 29, 0.9);
+    padding: 10px;
+    border-bottom-right-radius: 4px;
+}
+.label-play-right{
+    width: 150px;
+    background-color: rgba(29, 29, 29, 0.9);
+    padding: 10px;
+    border-bottom-right-radius: 4px;
+}
+.table-list{
+    width: 420px;
+    height: 900px;
+    background-color: rgba(26,28,33, 1);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    overflow-y: auto;
+    overflow-x:hidden;
+    transition: all 0.5s;
+}
+.table-list-close{
+    width: 420px;
+    height: 900px;
+    background-color: rgba(26,28,33, 1);
+    position: absolute;
+    right: -420px;
+    top: 0px;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.table-list-close-mask{
+    z-index: 1;
+    position: absolute;
+    width: 382px;
+    height: 900px;
+    background-color: #131519;
+    right: -381px;
+    top: 0px;
+}
+.table-list-body{
+    font-size: 13px;
 }
