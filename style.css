@@ -147,7 +147,7 @@ table tbody{
 /* position */
 .bottom-right{
     position: absolute;
-    bottom: 0px;
+    bottom: 1px;
     right: 0px;
 }
 .top-left{
@@ -307,6 +307,11 @@ a{
 .table-live-2{
     background-color: #fff;
     height: 100px;
+}
+.table-profile{
+    object-fit: cover;
+    width: 100%;
+    height:112px;
 }
 /*header*/
 h5{
