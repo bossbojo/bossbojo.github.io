@@ -41,7 +41,7 @@
     </nav>
     <div class="container">
         <div class="row mt-3">
-            <div class="col-md-9 p-0">
+            <div class="col-9 p-0">
                 <div class="echo-marketing">
                     <img class="echo-marketing-img" src="../images/icon/marketing.png" width="20px">
                     <marquee direction="lefe" scrollamount="5"> แซนด์วิชสลัมแอดมิชชั่นสตีล จูนแฟรี่ฮาร์ดมุมมองแพนดา
@@ -49,11 +49,44 @@
                         ดีไซน์เนอร์ปฏิสัมพันธ์ โรลออนเช็งเม้งบัตเตอร์คัตเอาต์อุรังคธาตุ</marquee>
                 </div>
             </div>
-            <div class="col-md-3 p-0" style="color:#b7b7b9;">
+            <div class="col-3 p-0" style="color:#b7b7b9;">
                 <div class="mt-2">
                     <p class="text-right">
                         28/05/2018 14:36 PM GMT+8
                     </p>
+                </div>
+            </div>
+        </div>
+        <div class="row d-block d-md-none">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <h5 style="color:#b48e48;">Baccarat</h5>
+                        <a class="btn btn-balance">
+                            <img src="../images/icon/playtable.png">
+                            <span class="color-white">Table 1</span>
+                        </a>
+                        <hr class="m-1">
+                        <label>Dealer : Nina</label>
+                    </div>
+                    <div class="col-6 pt-2">
+                        <div class="text-right">
+                            <span>
+                                Game: 154654 / 54
+                            </span><br>
+                            <button class="btn btn-table-play">50-4,000</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <div class="text-right">
+                    <a class="btn btn-balance" onclick="onOpenTablelist()">
+                        <img src="../images/icon/playtable.png">
+                        <span class="color-white">Table list</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -63,12 +96,12 @@
                     <source src="https://www.youtube.com/watch?v=Zgfi7wnGZlE" type="video/mp4">
                 </video>
                 <!-- top-left table -->
-                <div class="top-left">
+                <div class="top-left d-none d-md-block">
                     <div class="label-play">
                         <div class="row">
                             <div class="col-6">
-                                <h5 style="color:#b48e48;">Baccarat</h5>
-                                <a class="btn btn-balance" href="">
+                                <h5>Baccarat</h5>
+                                <a class="btn btn-balance">
                                     <img src="../images/icon/playtable.png">
                                     <span class="color-white">Table 1</span>
                                 </a>
@@ -88,12 +121,7 @@
                 </div>
                 <!-- top right table -->
                 <div class="top-right">
-                    <div class="label-play-right text-center">
-                        <a class="btn btn-balance" onclick="onOpenTablelist()">
-                            <img src="../images/icon/playtable.png">
-                            <span class="color-white">Table list</span>
-                        </a>
-                    </div>
+
                 </div>
                 <!-- table list  -->
                 <div class="table-list" id="table-lists">
@@ -110,11 +138,12 @@
                         </div>
                     </div>
                     <div class="table-list-body">
-                        <!-- <div class="row p-2">
+                        <!-- table 1 -->
+                        <div class="row p-2">
                             <div class="col-4">
                                 <a class="btn btn-balance">
                                     <img src="../images/icon/playtable.png">
-                                    <span class="color-white">Table 1</span>
+                                    <span class="color-white"><small>Table 1</small></span>
                                 </a>
                             </div>
                             <div class="col-4 p-2 color-gray">
@@ -123,13 +152,315 @@
                             <div class="col-4 p-2">
                                 <span>Limit : 50-4,000</span>
                             </div>
-                        </div> -->
-                        <div class="row p2">
+                        </div>
+                        <div class="row">
                             <div class="col-12">
-                                <img src="../images/mock1.png" width="100%">
-                                <img src="../images/mock1.png" width="100%">
+                                <div class="d-flex justify-content-start pl-2 pr-2 mb-2">
+                                    <div class="table-status-number">
+                                        <div class="table-sec bg-black-gray-2 text-center pt-2 pb-1">
+                                            <h5 class="mb-0">20</h5>
+                                            <small class="f-w">sec</small>
+                                        </div>
+                                        <div class="table-quick bg-gold text-center pt-2 pb-1">
+                                            <img src="../images/icon/poker-token-black.png">
+                                            <h7>QUICK BET</h7>
+                                        </div>
+                                    </div>
+                                    <div class="table-status-table-channel">
+                                        <div class="row pl-3">
+                                            <div class="col-3 p-0">
+                                                <img src="../images/users-img/users.png" width="100%">
+                                                <div class="text-center bg-black">
+                                                    <h5 class="mb-0">Nina</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-9 p-0">
+                                                <div class="table-live-2"> </div>
+                                                <div class="table-live-status bg-black-gray p-1 text-right pr-2">
+                                                    <span>
+                                                        <i class="fas fa-circle text-danger"></i> 24
+                                                        <i class="fas fa-circle text-primary"></i> 15
+                                                        <i class="fas fa-circle text-success"></i> 6
+                                                        <i class="fas fa-user text-light"></i> 6
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- table 2 -->
+                        <div class="row p-2">
+                            <div class="col-4">
+                                <a class="btn btn-balance">
+                                    <img src="../images/icon/playtable.png">
+                                    <span class="color-white"><small>Table 1</small></span>
+                                </a>
+                            </div>
+                            <div class="col-4 p-2 color-gray">
+                                <span>Game: 154654 / 54</span>
+                            </div>
+                            <div class="col-4 p-2">
+                                <span>Limit : 50-4,000</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-start pl-2 pr-2 mb-2">
+                                    <div class="table-status-number">
+                                        <div class="table-sec bg-black-gray-2 text-center pt-2 pb-1">
+                                            <h5 class="mb-0">20</h5>
+                                            <small class="f-w">sec</small>
+                                        </div>
+                                        <div class="table-quick bg-gold text-center pt-2 pb-1">
+                                            <img src="../images/icon/poker-token-black.png">
+                                            <h7>QUICK BET</h7>
+                                        </div>
+                                    </div>
+                                    <div class="table-status-table-channel">
+                                        <div class="row pl-3">
+                                            <div class="col-3 p-0">
+                                                <img src="../images/users-img/users.png" width="100%">
+                                                <div class="text-center bg-black">
+                                                    <h5 class="mb-0">Nina</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-9 p-0">
+                                                <div class="table-live-2"> </div>
+                                                <div class="table-live-status bg-black-gray p-1 text-right pr-2">
+                                                    <span>
+                                                        <i class="fas fa-circle text-danger"></i> 24
+                                                        <i class="fas fa-circle text-primary"></i> 15
+                                                        <i class="fas fa-circle text-success"></i> 6
+                                                        <i class="fas fa-user text-light"></i> 6
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- table 3 -->
+                        <div class="row p-2">
+                            <div class="col-4">
+                                <a class="btn btn-balance">
+                                    <img src="../images/icon/playtable.png">
+                                    <span class="color-white"><small>Table 1</small></span>
+                                </a>
+                            </div>
+                            <div class="col-4 p-2 color-gray">
+                                <span>Game: 154654 / 54</span>
+                            </div>
+                            <div class="col-4 p-2">
+                                <span>Limit : 50-4,000</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-start pl-2 pr-2 mb-2">
+                                    <div class="table-status-number">
+                                        <div class="table-sec bg-black-gray-2 text-center pt-2 pb-1">
+                                            <h5 class="mb-0">20</h5>
+                                            <small class="f-w">sec</small>
+                                        </div>
+                                        <div class="table-quick bg-gold text-center pt-2 pb-1">
+                                            <img src="../images/icon/poker-token-black.png">
+                                            <h7>QUICK BET</h7>
+                                        </div>
+                                    </div>
+                                    <div class="table-status-table-channel">
+                                        <div class="row pl-3">
+                                            <div class="col-3 p-0">
+                                                <img src="../images/users-img/users.png" width="100%">
+                                                <div class="text-center bg-black">
+                                                    <h5 class="mb-0">Nina</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-9 p-0">
+                                                <div class="table-live-2"> </div>
+                                                <div class="table-live-status bg-black-gray p-1 text-right pr-2">
+                                                    <span>
+                                                        <i class="fas fa-circle text-danger"></i> 24
+                                                        <i class="fas fa-circle text-primary"></i> 15
+                                                        <i class="fas fa-circle text-success"></i> 6
+                                                        <i class="fas fa-user text-light"></i> 6
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="title bg-gold">
+                        <div class="row p-1">
+                            <div class="col-6">
+                                <h4 class="mb-0">Dragon Tiger</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-list-body">
+                        <!-- table 1 -->
+                        <div class="row p-2">
+                            <div class="col-4">
+                                <a class="btn btn-balance">
+                                    <img src="../images/icon/playtable.png">
+                                    <span class="color-white"><small>Table 1</small></span>
+                                </a>
+                            </div>
+                            <div class="col-4 p-2 color-gray">
+                                <span>Game: 154654 / 54</span>
+                            </div>
+                            <div class="col-4 p-2">
+                                <span>Limit : 50-4,000</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-start pl-2 pr-2 mb-2">
+                                    <div class="table-status-number">
+                                        <div class="table-sec bg-black-gray-2 text-center pt-2 pb-1">
+                                            <h5 class="mb-0">20</h5>
+                                            <small class="f-w">sec</small>
+                                        </div>
+                                        <div class="table-quick bg-gold text-center pt-2 pb-1">
+                                            <img src="../images/icon/poker-token-black.png">
+                                            <h7>QUICK BET</h7>
+                                        </div>
+                                    </div>
+                                    <div class="table-status-table-channel">
+                                        <div class="row pl-3">
+                                            <div class="col-3 p-0">
+                                                <img src="../images/users-img/users.png" width="100%">
+                                                <div class="text-center bg-black">
+                                                    <h5 class="mb-0">Nina</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-9 p-0">
+                                                <div class="table-live-2"> </div>
+                                                <div class="table-live-status bg-black-gray p-1 text-right pr-2">
+                                                    <span>
+                                                        <i class="fas fa-circle text-danger"></i> 24
+                                                        <i class="fas fa-circle text-primary"></i> 15
+                                                        <i class="fas fa-circle text-success"></i> 6
+                                                        <i class="fas fa-user text-light"></i> 6
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- table 2 -->
+                        <div class="row p-2">
+                            <div class="col-4">
+                                <a class="btn btn-balance">
+                                    <img src="../images/icon/playtable.png">
+                                    <span class="color-white"><small>Table 1</small></span>
+                                </a>
+                            </div>
+                            <div class="col-4 p-2 color-gray">
+                                <span>Game: 154654 / 54</span>
+                            </div>
+                            <div class="col-4 p-2">
+                                <span>Limit : 50-4,000</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-start pl-2 pr-2 mb-2">
+                                    <div class="table-status-number">
+                                        <div class="table-sec bg-black-gray-2 text-center pt-2 pb-1">
+                                            <h5 class="mb-0">20</h5>
+                                            <small class="f-w">sec</small>
+                                        </div>
+                                        <div class="table-quick bg-gold text-center pt-2 pb-1">
+                                            <img src="../images/icon/poker-token-black.png">
+                                            <h7>QUICK BET</h7>
+                                        </div>
+                                    </div>
+                                    <div class="table-status-table-channel">
+                                        <div class="row pl-3">
+                                            <div class="col-3 p-0">
+                                                <img src="../images/users-img/users.png" width="100%">
+                                                <div class="text-center bg-black">
+                                                    <h5 class="mb-0">Nina</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-9 p-0">
+                                                <div class="table-live-2"> </div>
+                                                <div class="table-live-status bg-black-gray p-1 text-right pr-2">
+                                                    <span>
+                                                        <i class="fas fa-circle text-danger"></i> 24
+                                                        <i class="fas fa-circle text-primary"></i> 15
+                                                        <i class="fas fa-circle text-success"></i> 6
+                                                        <i class="fas fa-user text-light"></i> 6
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- table 3 -->
+                        <div class="row p-2">
+                            <div class="col-4">
+                                <a class="btn btn-balance">
+                                    <img src="../images/icon/playtable.png">
+                                    <span class="color-white"><small>Table 1</small></span>
+                                </a>
+                            </div>
+                            <div class="col-4 p-2 color-gray">
+                                <span>Game: 154654 / 54</span>
+                            </div>
+                            <div class="col-4 p-2">
+                                <span>Limit : 50-4,000</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-start pl-2 pr-2 mb-2">
+                                    <div class="table-status-number">
+                                        <div class="table-sec bg-black-gray-2 text-center pt-2 pb-1">
+                                            <h5 class="mb-0">20</h5>
+                                            <small class="f-w">sec</small>
+                                        </div>
+                                        <div class="table-quick bg-gold text-center pt-2 pb-1">
+                                            <img src="../images/icon/poker-token-black.png">
+                                            <h7>QUICK BET</h7>
+                                        </div>
+                                    </div>
+                                    <div class="table-status-table-channel">
+                                        <div class="row pl-3">
+                                            <div class="col-3 p-0">
+                                                <img src="../images/users-img/users.png" width="100%">
+                                                <div class="text-center bg-black">
+                                                    <h5 class="mb-0">Nina</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-9 p-0">
+                                                <div class="table-live-2"> </div>
+                                                <div class="table-live-status bg-black-gray p-1 text-right pr-2">
+                                                    <span>
+                                                        <i class="fas fa-circle text-danger"></i> 24
+                                                        <i class="fas fa-circle text-primary"></i> 15
+                                                        <i class="fas fa-circle text-success"></i> 6
+                                                        <i class="fas fa-user text-light"></i> 6
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div>
@@ -145,9 +476,18 @@
 <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
 <script>
     function onOpenTablelist() {
-        $('#table-lists').removeClass('table-list-close');
+        var toggle = $('#table-lists')
+            .hasClass('table-list-close');
+        if (toggle) {
+            $('#table-lists')
+                .removeClass('table-list-close');
+            return;
+        }
+        $('#table-lists')
+            .addClass('table-list-close');
     }
     function onCloseTablelist() {
-        $('#table-lists').addClass('table-list-close');
+        $('#table-lists')
+            .addClass('table-list-close');
     }
 </script>
